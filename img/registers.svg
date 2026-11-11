@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 434" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <rect width="900" height="434" fill="#1e1e1e"/>
+  <text x="450" y="34" text-anchor="middle" font-size="17" font-weight="bold" fill="#e8e8e8">x86-64 的 16 个通用寄存器</text>
+
+  <text x="110" y="72" text-anchor="middle" font-size="12" fill="#9aa0a6">64 位</text>
+  <text x="228" y="72" text-anchor="middle" font-size="12" fill="#9aa0a6">低 32 位</text>
+  <text x="336" y="72" text-anchor="middle" font-size="12" fill="#9aa0a6">低 16 位</text>
+  <text x="432" y="72" text-anchor="middle" font-size="12" fill="#9aa0a6">低 8 位</text>
+  <text x="492" y="72" font-size="12" fill="#9aa0a6">约定用途</text>
+  <line x1="40" y1="82" x2="860" y2="82" stroke="#3a3a3a" stroke-width="1"/>
+
+  <circle cx="56" cy="106" r="4" fill="#ff7262"/>
+  <text x="110" y="110" text-anchor="middle" font-size="13" fill="#79bbff">%rax</text>
+  <text x="228" y="110" text-anchor="middle" font-size="13" fill="#a8a8ad">%eax</text>
+  <text x="336" y="110" text-anchor="middle" font-size="13" fill="#a8a8ad">%ax</text>
+  <text x="432" y="110" text-anchor="middle" font-size="13" fill="#a8a8ad">%al</text>
+  <text x="492" y="110" font-size="13" fill="#d6d6d6">返回值</text>
+
+  <circle cx="56" cy="127" r="4" fill="#5ee08f"/>
+  <text x="110" y="131" text-anchor="middle" font-size="13" fill="#79bbff">%rbx</text>
+  <text x="228" y="131" text-anchor="middle" font-size="13" fill="#a8a8ad">%ebx</text>
+  <text x="336" y="131" text-anchor="middle" font-size="13" fill="#a8a8ad">%bx</text>
+  <text x="432" y="131" text-anchor="middle" font-size="13" fill="#a8a8ad">%bl</text>
+  <text x="492" y="131" font-size="13" fill="#d6d6d6">被调用者保存</text>
+
+  <circle cx="56" cy="148" r="4" fill="#ff7262"/>
+  <text x="110" y="152" text-anchor="middle" font-size="13" fill="#79bbff">%rcx</text>
+  <text x="228" y="152" text-anchor="middle" font-size="13" fill="#a8a8ad">%ecx</text>
+  <text x="336" y="152" text-anchor="middle" font-size="13" fill="#a8a8ad">%cx</text>
+  <text x="432" y="152" text-anchor="middle" font-size="13" fill="#a8a8ad">%cl</text>
+  <text x="492" y="152" font-size="13" fill="#d6d6d6">第 4 个参数；移位量 %cl</text>
+
+  <circle cx="56" cy="169" r="4" fill="#ff7262"/>
+  <text x="110" y="173" text-anchor="middle" font-size="13" fill="#79bbff">%rdx</text>
+  <text x="228" y="173" text-anchor="middle" font-size="13" fill="#a8a8ad">%edx</text>
+  <text x="336" y="173" text-anchor="middle" font-size="13" fill="#a8a8ad">%dx</text>
+  <text x="432" y="173" text-anchor="middle" font-size="13" fill="#a8a8ad">%dl</text>
+  <text x="492" y="173" font-size="13" fill="#d6d6d6">第 3 个参数；除法余数</text>
+
+  <circle cx="56" cy="190" r="4" fill="#ff7262"/>
+  <text x="110" y="194" text-anchor="middle" font-size="13" fill="#79bbff">%rsi</text>
+  <text x="228" y="194" text-anchor="middle" font-size="13" fill="#a8a8ad">%esi</text>
+  <text x="336" y="194" text-anchor="middle" font-size="13" fill="#a8a8ad">%si</text>
+  <text x="432" y="194" text-anchor="middle" font-size="13" fill="#a8a8ad">%sil</text>
+  <text x="492" y="194" font-size="13" fill="#d6d6d6">第 2 个参数</text>
+
+  <circle cx="56" cy="211" r="4" fill="#ff7262"/>
+  <text x="110" y="215" text-anchor="middle" font-size="13" fill="#79bbff">%rdi</text>
+  <text x="228" y="215" text-anchor="middle" font-size="13" fill="#a8a8ad">%edi</text>
+  <text x="336" y="215" text-anchor="middle" font-size="13" fill="#a8a8ad">%di</text>
+  <text x="432" y="215" text-anchor="middle" font-size="13" fill="#a8a8ad">%dil</text>
+  <text x="492" y="215" font-size="13" fill="#d6d6d6">第 1 个参数</text>
+
+  <circle cx="56" cy="232" r="4" fill="#5ee08f"/>
+  <text x="110" y="236" text-anchor="middle" font-size="13" fill="#79bbff">%rbp</text>
+  <text x="228" y="236" text-anchor="middle" font-size="13" fill="#a8a8ad">%ebp</text>
+  <text x="336" y="236" text-anchor="middle" font-size="13" fill="#a8a8ad">%bp</text>
+  <text x="432" y="236" text-anchor="middle" font-size="13" fill="#a8a8ad">%bpl</text>
+  <text x="492" y="236" font-size="13" fill="#d6d6d6">被调用者保存；常用作帧指针</text>
+
+  <circle cx="56" cy="253" r="4" fill="#e0b341"/>
+  <text x="110" y="257" text-anchor="middle" font-size="13" fill="#79bbff">%rsp</text>
+  <text x="228" y="257" text-anchor="middle" font-size="13" fill="#a8a8ad">%esp</text>
+  <text x="336" y="257" text-anchor="middle" font-size="13" fill="#a8a8ad">%sp</text>
+  <text x="432" y="257" text-anchor="middle" font-size="13" fill="#a8a8ad">%spl</text>
+  <text x="492" y="257" font-size="13" fill="#d6d6d6">栈指针；永远指向栈顶</text>
+
+  <circle cx="56" cy="274" r="4" fill="#ff7262"/>
+  <text x="110" y="278" text-anchor="middle" font-size="13" fill="#79bbff">%r8–%r11</text>
+  <text x="228" y="278" text-anchor="middle" font-size="13" fill="#a8a8ad">%r8d–%r11d</text>
+  <text x="336" y="278" text-anchor="middle" font-size="13" fill="#a8a8ad">%r8w–%r11w</text>
+  <text x="432" y="278" text-anchor="middle" font-size="13" fill="#a8a8ad">%r8b–%r11b</text>
+  <text x="492" y="278" font-size="13" fill="#d6d6d6">%r8、%r9 是第 5、6 个参数</text>
+
+  <circle cx="56" cy="295" r="4" fill="#5ee08f"/>
+  <text x="110" y="299" text-anchor="middle" font-size="13" fill="#79bbff">%r12–%r15</text>
+  <text x="228" y="299" text-anchor="middle" font-size="13" fill="#a8a8ad">%r12d–%r15d</text>
+  <text x="336" y="299" text-anchor="middle" font-size="13" fill="#a8a8ad">%r12w–%r15w</text>
+  <text x="432" y="299" text-anchor="middle" font-size="13" fill="#a8a8ad">%r12b–%r15b</text>
+  <text x="492" y="299" font-size="13" fill="#d6d6d6">被调用者保存</text>
+
+  <line x1="40" y1="312" x2="860" y2="312" stroke="#3a3a3a" stroke-width="1"/>
+
+  <circle cx="56" cy="336" r="4" fill="#ff7262"/>
+  <text x="72" y="340" font-size="13" fill="#d6d6d6">调用者保存（caller-saved）：调用另一个函数前由调用者自己保存</text>
+  <circle cx="56" cy="362" r="4" fill="#5ee08f"/>
+  <text x="72" y="366" font-size="13" fill="#d6d6d6">被调用者保存（callee-saved）：被调用者负责保存并在返回前恢复原值</text>
+
+  <text x="56" y="396" font-size="12" fill="#9aa0a6">• %al ⊂ %ax ⊂ %eax ⊂ %rax 是同一块物理寄存器的不同宽度视图，改一个就等于改另一个</text>
+  <text x="56" y="420" font-size="12" fill="#9aa0a6">• movl $1, %eax 这类写 32 位寄存器的指令会把高 32 位自动清零；写 %ax / %al 则只改低 16 / 8 位</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <marker id="cp-arrow" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#6a6a6a"/>
+    </marker>
+  </defs>
+  <rect width="900" height="300" fill="#1e1e1e"/>
+  <text x="450" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#e8e8e8">从 C 源程序到可执行文件的四道工序</text>
+
+  <text x="192" y="94" text-anchor="middle" font-size="12" fill="#9aa0a6">预处理</text>
+  <text x="334" y="94" text-anchor="middle" font-size="12" fill="#9aa0a6">编译</text>
+  <text x="506" y="94" text-anchor="middle" font-size="12" fill="#9aa0a6">汇编</text>
+  <text x="678" y="94" text-anchor="middle" font-size="12" fill="#9aa0a6">链接</text>
+
+  <text x="106" y="100" text-anchor="middle" font-size="11" fill="#8a8f94">文本</text>
+  <text x="278" y="100" text-anchor="middle" font-size="11" fill="#8a8f94">文本</text>
+  <text x="450" y="100" text-anchor="middle" font-size="11" fill="#8a8f94">文本</text>
+  <text x="622" y="100" text-anchor="middle" font-size="11" fill="#e0b341">二进制</text>
+  <text x="794" y="100" text-anchor="middle" font-size="11" fill="#e0b341">二进制</text>
+
+  <rect x="48" y="108" width="116" height="54" fill="#142235" stroke="#5aa9ff" stroke-width="1.5"/>
+  <text x="106" y="134" text-anchor="middle" font-size="15" font-weight="bold" fill="#79bbff">p.c</text>
+  <text x="106" y="152" text-anchor="middle" font-size="11" fill="#8fa8c8">C 源程序</text>
+
+  <rect x="220" y="108" width="116" height="54" fill="#131a2a" stroke="#7f8fd8" stroke-width="1.5"/>
+  <text x="278" y="134" text-anchor="middle" font-size="15" font-weight="bold" fill="#a9b6f5">p.i</text>
+  <text x="278" y="152" text-anchor="middle" font-size="11" fill="#8b93b8">展开宏与头文件后</text>
+
+  <rect x="392" y="108" width="116" height="54" fill="#131a2a" stroke="#7f8fd8" stroke-width="1.5"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="bold" fill="#a9b6f5">p.s</text>
+  <text x="450" y="152" text-anchor="middle" font-size="11" fill="#8b93b8">汇编代码</text>
+
+  <rect x="564" y="108" width="116" height="54" fill="#14291c" stroke="#45d483" stroke-width="1.5"/>
+  <text x="622" y="134" text-anchor="middle" font-size="15" font-weight="bold" fill="#5ee08f">p.o</text>
+  <text x="622" y="152" text-anchor="middle" font-size="11" fill="#79c98f">可重定位目标文件</text>
+
+  <rect x="736" y="108" width="116" height="54" fill="#14291c" stroke="#45d483" stroke-width="1.5"/>
+  <text x="794" y="134" text-anchor="middle" font-size="15" font-weight="bold" fill="#5ee08f">p</text>
+  <text x="794" y="152" text-anchor="middle" font-size="11" fill="#79c98f">可执行程序</text>
+
+  <line x1="164" y1="135" x2="214" y2="135" stroke="#6a6a6a" stroke-width="1.5" marker-end="url(#cp-arrow)"/>
+  <line x1="336" y1="135" x2="386" y2="135" stroke="#6a6a6a" stroke-width="1.5" marker-end="url(#cp-arrow)"/>
+  <line x1="508" y1="135" x2="558" y2="135" stroke="#6a6a6a" stroke-width="1.5" marker-end="url(#cp-arrow)"/>
+  <line x1="680" y1="135" x2="730" y2="135" stroke="#6a6a6a" stroke-width="1.5" marker-end="url(#cp-arrow)"/>
+
+  <text x="192" y="186" text-anchor="middle" font-size="12" fill="#e0b341">gcc -E</text>
+  <text x="334" y="186" text-anchor="middle" font-size="12" fill="#e0b341">gcc -S</text>
+  <text x="506" y="186" text-anchor="middle" font-size="12" fill="#e0b341">gcc -c</text>
+  <text x="678" y="186" text-anchor="middle" font-size="12" fill="#e0b341">gcc p.o -o p</text>
+
+  <text x="48" y="232" font-size="12" fill="#9aa0a6">• gcc -Og -o p p.c 一条命令就能跑完四步，内部按顺序调用 cpp、cc1、as、ld；加 -v 可以看到每一步实际的命令行</text>
+  <text x="48" y="258" font-size="12" fill="#9aa0a6">• .c / .i / .s 是人能读的文本，.o 与可执行文件是二进制，只能靠反汇编器 objdump -d 还原</text>
+  <text x="48" y="284" font-size="12" fill="#9aa0a6">• -Og 是「为调试而优化」的等级：保留源码结构便于单步，同时做基本优化（gcc 4.8 起）</text>
+</svg>

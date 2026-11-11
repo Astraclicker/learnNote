@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <rect width="900" height="380" fill="#1e1e1e"/>
+  <text x="450" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#e8e8e8">标准正态分布 N(0,1) 的密度曲线</text>
+
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c8c8c8"/>
+    </marker>
+  </defs>
+
+  <path d="M 357.5 179.01 L 380.63 149.43 L 403.75 123.97 L 426.88 106.67 L 450 100.53 L 473.12 106.67 L 496.25 123.97 L 519.37 149.43 L 542.5 179.01 L 542.5 300 L 357.5 300 Z" fill="#5aa9ff" opacity="0.20"/>
+
+  <line x1="450" y1="300" x2="450" y2="72" stroke="#c8c8c8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="60" y1="300" x2="852" y2="300" stroke="#c8c8c8" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="462" y="70" font-size="13" fill="#a8a8ad">φ(x)</text>
+  <text x="836" y="288" font-size="13" fill="#a8a8ad">x</text>
+
+  <g stroke="#4a4a4a" stroke-width="1">
+    <line x1="172.5" y1="300" x2="172.5" y2="306"/>
+    <line x1="265" y1="300" x2="265" y2="306"/>
+    <line x1="357.5" y1="300" x2="357.5" y2="306"/>
+    <line x1="450" y1="300" x2="450" y2="306"/>
+    <line x1="542.5" y1="300" x2="542.5" y2="306"/>
+    <line x1="635" y1="300" x2="635" y2="306"/>
+    <line x1="727.5" y1="300" x2="727.5" y2="306"/>
+  </g>
+  <g font-size="13" fill="#a8a8ad" text-anchor="middle">
+    <text x="172.5" y="324">−3</text>
+    <text x="265" y="324">−2</text>
+    <text x="357.5" y="324">−1</text>
+    <text x="450" y="324" font-weight="bold" fill="#e8e8e8">0</text>
+    <text x="542.5" y="324">1</text>
+    <text x="635" y="324">2</text>
+    <text x="727.5" y="324">3</text>
+  </g>
+
+  <path d="M 80 299.93 L 103.13 299.82 L 126.25 299.56 L 149.38 298.99 L 172.5 297.78 L 195.63 295.45 L 218.75 291.24 L 241.88 284.13 L 265 273 L 288.13 256.86 L 311.25 235.24 L 334.38 208.68 L 357.5 179.01 L 380.63 149.43 L 403.75 123.97 L 426.88 106.67 L 450 100.53 L 473.12 106.67 L 496.25 123.97 L 519.37 149.43 L 542.5 179.01 L 565.62 208.68 L 588.75 235.24 L 611.87 256.86 L 635 273 L 658.12 284.13 L 681.25 291.24 L 704.37 295.45 L 727.5 297.78 L 750.62 298.99 L 773.75 299.56 L 796.87 299.82 L 820 299.93" fill="none" stroke="#5aa9ff" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <circle cx="450" cy="100.53" r="3.4" fill="#5aa9ff"/>
+  <text x="525" y="272" text-anchor="middle" font-size="13" fill="#79bbff">68.26%</text>
+
+  <text x="450" y="352" text-anchor="middle" font-size="12.5" fill="#a8a8ad">曲线关于 x=0 对称，峰值 φ(0)=1/√(2π)≈0.3989；阴影部分面积 P(−1&lt;X≤1)≈0.6826</text>
+</svg>

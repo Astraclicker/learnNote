@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <rect width="900" height="480" fill="#1e1e1e"/>
+  <text x="450" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#e8e8e8">区域 D：0 &lt; x &lt; 1，x² &lt; y &lt; x</text>
+
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c8c8c8"/>
+    </marker>
+  </defs>
+
+  <path d="M 180 400 L 240 397 L 300 388 L 360 373 L 420 352 L 480 325 L 540 292 L 600 253 L 660 208 L 720 157 L 780 100 L 180 400 Z" fill="#5aa9ff" opacity="0.16"/>
+
+  <line x1="160" y1="400" x2="840" y2="400" stroke="#c8c8c8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="180" y1="420" x2="180" y2="80" stroke="#c8c8c8" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="846" y="388" font-size="13" fill="#a8a8ad">x</text>
+  <text x="188" y="74" font-size="13" fill="#a8a8ad">y</text>
+  <text x="166" y="422" font-size="13" fill="#a8a8ad">O</text>
+
+  <g stroke="#4a4a4a" stroke-width="1">
+    <line x1="780" y1="400" x2="780" y2="408"/>
+    <line x1="180" y1="100" x2="172" y2="100"/>
+  </g>
+  <text x="780" y="424" text-anchor="middle" font-size="13" fill="#a8a8ad">1</text>
+  <text x="164" y="104" text-anchor="end" font-size="13" fill="#a8a8ad">1</text>
+
+  <path d="M 180 400 L 240 397 L 300 388 L 360 373 L 420 352 L 480 325 L 540 292 L 600 253 L 660 208 L 720 157 L 780 100" fill="none" stroke="#5aa9ff" stroke-width="2.2"/>
+  <line x1="180" y1="400" x2="780" y2="100" stroke="#f0a500" stroke-width="2.2"/>
+
+  <line x1="540" y1="292" x2="540" y2="220" stroke="#e8e8e8" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="480" y1="325" x2="300" y2="325" stroke="#e8e8e8" stroke-width="1.6" stroke-dasharray="5 4"/>
+
+  <text x="628" y="118" font-size="13" fill="#f0a500">y = x</text>
+  <text x="560" y="344" font-size="13" fill="#5aa9ff">y = x²</text>
+  <text x="552" y="262" font-size="12.5" fill="#e8e8e8">x² &lt; y &lt; x</text>
+  <text x="300" y="316" font-size="12.5" fill="#e8e8e8">y &lt; x &lt; √y</text>
+
+  <text x="450" y="444" text-anchor="middle" font-size="13" fill="#d6d6d6">D 上密度为常数 6；求 f_X 沿竖线切（y 由 x² 到 x），求 f_Y 沿横线切（x 由 y 到 √y）</text>
+  <text x="450" y="466" text-anchor="middle" font-size="12.5" fill="#a8a8ad">面积 S = ∫₀¹ (x − x²) dx = 1/6</text>
+</svg>
